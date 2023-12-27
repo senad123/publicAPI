@@ -17,7 +17,7 @@ const config = {
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
-
+app.use(express.json());
 let content = "";
 let selectedCity = "";
 
