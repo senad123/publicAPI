@@ -11,7 +11,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-  "test": "./node_modules/.bin/wdio ./wdio.conf.js"
+  "test": "wdio wdio.conf.js"
   },
   "keywords": [],
   "author": "",
