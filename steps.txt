@@ -1,0 +1,23 @@
+OW
+https://openweathermap.org/api/geocoding-api
+
+
+1 Post City Name to GET Lat/Lon
+http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid={API key}
+
+2 POST lan/Lon to get weater
+https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid={API key}
+
+Response
+{"coord":{"lon":15.9622,"lat":45.8426},"weather":[{"id":802,"main":"Clouds","description":"scattered clouds","icon":"03d"}],"base":"stations","main":{"temp":282.81,"feels_like":279.9,"temp_min":280.38,"temp_max":283.78,"pressure":1006,"humidity":88},"visibility":10000,"wind":{"speed":6.17,"deg":230},"clouds":{"all":40},"dt":1700207426,"sys":{"type":2,"id":2006646,"country":"HR","sunrise":1700200701,"sunset":1700234638},"timezone":3600,"id":6618988,"name":"Britanski trg","cod":200}
+
+
+
+3 use site to displat ICON
+change icon id 04d with Var
+https://openweathermap.org/img/w/04d.png
+
+
+
+
+weather?lat=44.34&lon=10.99&appid={API key}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h2>
+      <% if (locals.cityData){ %>
+      <%= cityData.country %>
+      <%= cityData.name %> 
+      <% if (locals.icon){%>
+        <img src="<%= icon %>" alt="Weather Icon" width="50px">
+        <%}else{ %>
+        <%}%>
+    <% }else {%>
+     <%= content %>
+     <% }%>
+    
+    </h2>
+
+   
+    <h2>
+     
+   
+      <% if (locals.weatherData){ %>
+      
+        <li> Temperature: <%= weatherData.temp %> °C</li> 
+        <li> Pressure: <%= weatherData.pressure %> mbr  </li>
+        <li> Humidity: <%= weatherData.humidity %>   </li>
+       
+      <% }%>
+      
+     
+    </h2>
+   
+
+    <form action="/" id="form" class="form" method="POST">
+        <select name="type" class="form-select">
+          <option value="" data-display="Select">Random type</option>
+          <option value="Zagreb">Zagreb</option>
+          <option value="Rijeka">Rijeka</option>
+          <option value="Pula">Grad Pula</option>
+          <option value="Prizren">Prizren</option>
+          <option value="Dortmund">Dortmund</option>
+        </select>
+        <!-- <select name="participants" class="form-select">
+          <option value="">Any number of people</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select> -->
+        <button type="submit" class="form-submit">Go</button>
+      </form>
+    
+</body>
+</html>
